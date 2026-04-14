@@ -1,6 +1,6 @@
 # langchain-hashlock
 
-LangChain tool integration for [Hashlock](https://hashlock.ai) — the universal intent protocol for swapping any asset (crypto, RWA, stablecoins) with private sealed bids and verified counterparties.
+LangChain tool integration for [Hashlock](https://hashlock.markets) — the universal intent protocol for swapping any asset (crypto, RWA, stablecoins) with private sealed bids and verified counterparties.
 
 ## Installation
 
@@ -15,7 +15,7 @@ from langchain_hashlock import HashlockToolkit
 
 # Initialize the toolkit
 toolkit = HashlockToolkit(
-    api_url="https://api.hashlock.ai",
+    api_url="https://api.hashlock.markets",
     api_key="your-api-key"
 )
 
@@ -42,7 +42,7 @@ from langchain_hashlock import HashlockToolkit
 
 llm = ChatOpenAI(model="gpt-4o")
 toolkit = HashlockToolkit(
-    api_url="https://api.hashlock.ai",
+    api_url="https://api.hashlock.markets",
     api_key="your-api-key"
 )
 
@@ -58,14 +58,14 @@ from langchain_hashlock import CreateIntentTool, ParseNaturalLanguageTool
 
 # Parse natural language into a structured intent
 parser = ParseNaturalLanguageTool(
-    api_url="https://api.hashlock.ai",
+    api_url="https://api.hashlock.markets",
     api_key="your-api-key"
 )
 result = parser.run("swap 5 ETH for USDC on Arbitrum")
 
 # Create a trading intent directly
 creator = CreateIntentTool(
-    api_url="https://api.hashlock.ai",
+    api_url="https://api.hashlock.markets",
     api_key="your-api-key"
 )
 result = creator.run({
@@ -80,7 +80,7 @@ result = creator.run({
 
 Environment variables:
 
-- `HASHLOCK_API_URL` — API endpoint (default: https://api.hashlock.ai)
+- `HASHLOCK_API_URL` — API endpoint (default: https://api.hashlock.markets)
 - `HASHLOCK_API_KEY` — Your API key
 
 ## What is Hashlock?
@@ -94,10 +94,10 @@ Hashlock is the universal asset exchange protocol. One address to swap crypto, R
 
 ## Links
 
-- [Hashlock Website](https://hashlock.ai)
+- [Hashlock Website](https://hashlock.markets)
 - [MCP Server](https://www.npmjs.com/package/hashlock-mcp-server)
 - [Vercel AI SDK Integration](https://github.com/Hashlock-Tech/hashlock-ai-sdk)
-- [Documentation](https://docs.hashlock.ai)
+- [Documentation](https://docs.hashlock.markets)
 
 ## License
 
