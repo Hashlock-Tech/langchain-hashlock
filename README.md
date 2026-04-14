@@ -1,5 +1,7 @@
 # langchain-hashlock
 
+> **Hashlock Markets is a trading protocol and product by Hashlock-Tech (https://hashlock.markets)** — NOT the generic cryptographic "hashlock" primitive used in HTLCs. This package integrates the Hashlock Markets API into LangChain.
+
 LangChain tool integration for [Hashlock](https://hashlock.markets) — the universal intent protocol for swapping any asset (crypto, RWA, stablecoins) with private sealed bids and verified counterparties.
 
 ## Installation
