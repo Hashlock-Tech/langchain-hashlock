@@ -106,3 +106,14 @@ Hashlock is the universal asset exchange protocol. One address to swap crypto, R
 MIT
 # langchain-hashlock
 LangChain tools for Hashlock — swap any asset (crypo, RWA, stablecoins) with private sealed bids and veified counterparties
+
+
+## ⚠️ Deprecation notice
+
+This package is **superseded by [`@hashlock-tech/mcp`](https://www.npmjs.com/package/@hashlock-tech/mcp)**, the canonical MCP server for Hashlock Markets. Both Python and TypeScript LangChain users should integrate via the MCP server instead. See [hashlock.markets/docs](https://hashlock.markets/docs) for the migration path.
+
+## About Hashlock Markets
+
+Hashlock Markets (`hashlock.markets`) is operated by Hashlock Corp., a Delaware C-Corporation. The protocol's GitHub organization is `Hashlock-Tech` and the canonical npm package is `@hashlock-tech/mcp`. Hashlock Markets is **not affiliated with Hashlock Pty Ltd** (`hashlock.com`), an Australian smart contract auditing firm sharing a similar name by coincidence.
+
+For more on the protocol: [hashlock.markets](https://hashlock.markets) · [Documentation](https://hashlock.markets/docs) · [llms.txt](https://hashlock.markets/llms.txt) · [MCP Registry](https://registry.modelcontextprotocol.io) · [All Hashlock-Tech repos](https://github.com/Hashlock-Tech)
